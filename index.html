@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>firebase Application</title>
+</head>
+<body>
+    <style>
+        body{
+            height: 100%;
+            text-align: center;
+            background-color: rgba(0, 0, 255, 0.834);
+            
+        }
+        .container{
+            margin: auto;
+            height: 400px;
+            width: 400px;
+            background-color: white;
+            color: black;
+            display: flex;
+           
+            flex-direction: column;
+            
+        }
+        #name{
+            width: 250px;
+            height: 30px;
+            margin: 50px 20px 20px;
+        }
+      #email{
+        width: 250px;
+        height: 30px;
+        margin: 10px 20px;
+      }
+      #massege{
+        width: 250px;
+        height: 70px;
+        margin: 10px 20px;
+      }
+      #btn{
+        margin: auto;
+        border:2px solid black;
+        background-color: green;
+        width: 70px;
+        height: 30px;
+      }
+      .btn:hover{
+        background-color: blanchedalmond;
+      }
+
+    </style>
+    <h1>Contact Us Form</h1>
+    <div class="container">
+      <form action="">
+        <div>
+<input  id="name"type="text" placeholder="name">
+</div>
+<div>
+<input id="email" type="email" placeholder="Email">
+</div>
+<div>
+<input id="massege" type="text" placeholder="Massege">
+</div>
+<button id="btn" >send</button>
+    </div>
+  </form>
+    <script type="module" src="./firebaseConfig.js"></script>
+    <script type = "module"src="./index.js"></script>
+</body>
+</html>
